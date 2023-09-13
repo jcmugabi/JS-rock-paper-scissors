@@ -9,12 +9,36 @@
 
 <body>
     <h1>Rock Paper Scissors!</h1>
-    <script>
+
+    <button onclick="
+    randomNumber = Math.random();
+    randomNo();
+    compMove1();
+    alert(`You Picked Rock. The computer picked ${computerMove}. ${result}`);
+    ">Rock</button>
+
+
+    <button onclick=" 
+    randomNumber = Math.random();
+    randomNo();
+    compMove2();
+    alert(`You Picked Paper. The computer picked ${computerMove}. ${result}`);
+    ">Paper</button>
+
+
+    <button onclick="
+    randomNumber = Math.random();
+    randomNo();
+    compMove3();
+    alert(`You Picked scissors. The computer picked ${computerMove}. ${result}`);
+    ">Scissors</button>
+
+    <Script>
         let randomNumber = '';
         let result = '';
         let computerMove = '';
 
-        function randomNo1() {
+        function randomNo() {
 
 
             if (randomNumber >= 0 && randomNumber < 1 / 3) {
@@ -25,31 +49,6 @@
                 computerMove = 'scissors';
             }
         }
-
-        function randomNo2() {
-
-
-            if (randomNumber >= 0 && randomNumber < 1 / 3) {
-                computerMove = 'rock';
-            } else if (randomNumber > 1 / 3 && randomNumber < 2 / 3) {
-                computerMove = 'paper';
-            } else if (randomNumber > 2 / 3 && randomNumber < 1) {
-                computerMove = 'scissors';
-            }
-        }
-
-        function randomNo3() {
-
-
-            if (randomNumber >= 0 && randomNumber < 1 / 3) {
-                computerMove = 'rock';
-            } else if (randomNumber > 1 / 3 && randomNumber < 2 / 3) {
-                computerMove = 'paper';
-            } else if (randomNumber > 2 / 3 && randomNumber < 1) {
-                computerMove = 'scissors';
-            }
-        }
-
 
         function compMove1() {
 
@@ -84,44 +83,6 @@
                 result = 'Its a tie';
             }
         }
-    </script>
-
-
-
-    <button onclick="
-    randomNumber = Math.random();
-
-    randomNo1();
-    compMove1();
-
-    
-
-    alert(`You Picked Rock. The computer picked ${computerMove}. ${result}`);
-
-    ">Rock</button>
-
-
-    <button onclick=" 
-    randomNumber = Math.random();
-
-    randomNo2();
-    compMove2();
-
-    alert(`You Picked Paper. The computer picked ${computerMove}. ${result}`);
-    
-    ">Paper</button>
-
-
-    <button onclick="
- 
-    randomNumber = Math.random();
-    randomNo3();
-    compMove3();
-    
-    alert(`You Picked scissors. The computer picked ${computerMove}. ${result}`);
-    ">Scissors</button>
-
-    <Script>
     </Script>
 
 </body>
